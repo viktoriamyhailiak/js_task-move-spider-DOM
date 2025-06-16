@@ -24,11 +24,11 @@ document.addEventListener('click', (e) => {
   }
 
   if (coords.top + spider.offsetHeight > wall.offsetHeight) {
-    coords.top = wall.offsetHeight - spider.offsetHeight - wall.clientTop * 2;
+    coords.top = wall.clientWidth - spider.offsetHeight;
   }
 
   if (coords.left + spider.offsetWidth > wall.offsetWidth) {
-    coords.left = wall.offsetWidth - spider.offsetWidth - wall.clientLeft * 2;
+    coords.left = wall.clientWidth - spider.offsetWidth;
   }
 
   spider.style.top = coords.top + 'px';
