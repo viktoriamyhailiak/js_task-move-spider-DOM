@@ -23,11 +23,11 @@ document.addEventListener('click', (e) => {
     coords.top = 0;
   }
 
-  if (coords.top + spider.offsetHeight > wall.offsetHeight) {
-    coords.top = wall.clientWidth - spider.offsetHeight;
+  if (coords.top + spider.offsetHeight > wall.clientHeight) {
+    coords.top = wall.clientHeight - spider.offsetHeight;
   }
 
-  if (coords.left + spider.offsetWidth > wall.offsetWidth) {
+  if (coords.left + spider.offsetWidth > wall.clientWidth) {
     coords.left = wall.clientWidth - spider.offsetWidth;
   }
 
